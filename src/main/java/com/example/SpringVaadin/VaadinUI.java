@@ -73,7 +73,7 @@ public class VaadinUI extends UI{
 			
 			public void buttonClick(ClickEvent event) {
 				try {
-					Button Sehirler[]=new Button[N+1];
+					Button Sehirler[]=new Button[5];
 					soldan = Integer.toString(sol)+"px";
 					yukardan = Integer.toString(yukarı)+"px";
 					Sehirler[N]= new Button(sehir);
@@ -82,7 +82,7 @@ public class VaadinUI extends UI{
 					yukarı+=50;
 					Sehirler[0].addClickListener(new Button.ClickListener() {
 						private static final long serialVersionUID = 1L;
-						
+					
 						public void buttonClick(ClickEvent event) {
 							try {
 								sehir=Sehirler[0].getCaption();
@@ -94,12 +94,13 @@ public class VaadinUI extends UI{
 								e.printStackTrace();
 							}
 						}
-					});				
+					});
 				} 
 				catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+				
 			}
 		});
 		
