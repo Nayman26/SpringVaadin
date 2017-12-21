@@ -4,16 +4,10 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.List;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.json.XML;
+//import org.json.XML;
 
-import org.dom4j.Document;
-import org.dom4j.DocumentException;
-import org.dom4j.Node;
-import org.dom4j.io.SAXReader;
 
 public class JsonParser {
 	
@@ -37,7 +31,7 @@ public class JsonParser {
 		String xml=null;
 		try {
 			json = new JSONObject(result.toString());
-			xml = XML.toString(json);
+			//xml = XML.toString(json);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -45,7 +39,7 @@ public class JsonParser {
 
 	return xml;
     }
-		  public static void main(final String[] argv) throws DocumentException  {
+		  public static void main(final String[] argv){
 			System.out.println(urlAl());
 
 	}
